@@ -3,5 +3,18 @@
   "owner": {
     "name": "orekyuu"
   },
-  "plugins": []
+  "plugins": [
+    {
+      "name": "junit-report",
+      "description": "Collects and displays JUnit XML test reports",
+      "source": "./plugins/junit-report",
+      "category": "testing"
+    },
+    {
+      "name": "commit-command",
+      "description": "Creates git commits with appropriate commit messages",
+      "source": "./plugins/commit-command",
+      "category": "git"
+    }
+  ]
 }

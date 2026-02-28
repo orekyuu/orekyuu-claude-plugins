@@ -1,0 +1,10 @@
+{
+  "name": "orekyuu-claude-plugins",
+  "private": true,
+  "scripts": {
+    "format": "prettier --write ."
+  },
+  "devDependencies": {
+    "prettier": "^3.5.2"
+  }
+}

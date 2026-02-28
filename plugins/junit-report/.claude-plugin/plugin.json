@@ -1,0 +1,8 @@
+{
+  "name": "junit-report",
+  "description": "Collects and displays JUnit XML test reports",
+  "version": "1.0.0",
+  "author": {
+    "name": "orekyuu"
+  }
+}

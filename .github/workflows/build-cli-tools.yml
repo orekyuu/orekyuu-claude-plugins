@@ -1,0 +1,43 @@
+name: Build CLI Tools
+
+on:
+  push:
+    branches: [main, master]
+    paths:
+      - "crates/**"
+      - "Cargo.toml"
+      - "Cargo.lock"
+
+jobs:
+  build-junit-report:
+    runs-on: macos-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: dtolnay/rust-toolchain@stable
+
+      - uses: actions/cache@v4
+        with:
+          path: |
+            ~/.cargo/registry
+            ~/.cargo/git
+            target
+          key: ${{ runner.os }}-cargo-${{ hashFiles('**/Cargo.lock') }}
+
+      - name: Build
+        run: cargo build --release -p junit-report
+
+      - name: Copy binary to plugin
+        run: |
+          mkdir -p plugins/junit-report/tools
+          cp target/release/junit-report plugins/junit-report/tools/junit-report
+
+      - name: Commit binary
+        run: |
+          git config --local user.email "github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
+          git add plugins/junit-report/tools/junit-report
+          git diff --staged --quiet || git commit -m "build: update junit-report binary [skip ci]"
+          git push

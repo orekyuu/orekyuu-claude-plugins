@@ -27,6 +27,12 @@
       "description": "Registers MCP-IDE-Gateway as an MCP server to enable Claude to interact with JetBrains IDEs",
       "source": "./plugins/mcp-ide-gateway",
       "category": "ide"
+    },
+    {
+      "name": "gh-tools",
+      "description": "GitHub CLI tools for waiting for CI, investigating CI failures, and retrieving PR information",
+      "source": "./plugins/gh-tools",
+      "category": "git"
     }
   ]
 }

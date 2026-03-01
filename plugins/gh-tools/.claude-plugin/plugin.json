@@ -1,0 +1,8 @@
+{
+  "name": "gh-tools",
+  "description": "GitHub CLI tools for managing PRs, waiting for CI, investigating CI failures, and retrieving PR information",
+  "version": "1.0.0",
+  "author": {
+    "name": "orekyuu"
+  }
+}

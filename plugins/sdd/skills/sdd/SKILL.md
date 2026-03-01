@@ -3,23 +3,23 @@ name: sdd
 description: >
   Use this skill when the user says "/sdd", "SDDで実装して", "仕様書を書いてから実装して",
   or wants to implement a feature following Specification-Driven Development.
-tools: Bash, Agent
+tools: Bash, Agent, Skill
 ---
 
 SDD（Specification-Driven Development）に従い、仕様策定 → テスト設計 → 実装 の順で機能を開発する。
-各フェーズは専用エージェントが担当し、ファイルパスを通じて連携する。
+各フェーズは専用エージェント・スキルが担当し、ファイルパスを通じて連携する。
 
 ## フェーズ1: 仕様策定
 
-`sdd:sdd-spec` エージェントを起動して仕様書を作成する。
-ユーザーの要件をそのままプロンプトに含める。
+`sdd:sdd-spec` スキルを起動して仕様書を作成する。
+sdd-spec はユーザーと直接対話しながらヒアリングを行い、仕様書を作成する。
 
 ```
-Agent: sdd:sdd-spec
-prompt: <ユーザーの要件をそのまま含める>
+Skill: sdd:sdd-spec
+args: <ユーザーの要件をそのまま含める>
 ```
 
-エージェントが返すのは仕様書のファイルパス。このパスを変数として保持する。
+スキルの最終出力に含まれる仕様書のファイルパスを読み取り、変数として保持する。
 
 ## フェーズ2: テスト設計
 

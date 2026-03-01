@@ -15,6 +15,12 @@
       "description": "Creates git commits with appropriate commit messages",
       "source": "./plugins/commit-command",
       "category": "git"
+    },
+    {
+      "name": "sdd",
+      "description": "Implements features following Specification-Driven Development",
+      "source": "./plugins/sdd",
+      "category": "development"
     }
   ]
 }

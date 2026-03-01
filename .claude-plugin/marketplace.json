@@ -21,6 +21,12 @@
       "description": "Implements features following Specification-Driven Development",
       "source": "./plugins/sdd",
       "category": "development"
+    },
+    {
+      "name": "mcp-ide-gateway",
+      "description": "Registers MCP-IDE-Gateway as an MCP server to enable Claude to interact with JetBrains IDEs",
+      "source": "./plugins/mcp-ide-gateway",
+      "category": "ide"
     }
   ]
 }

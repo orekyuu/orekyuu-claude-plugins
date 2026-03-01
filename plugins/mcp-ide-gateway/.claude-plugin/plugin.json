@@ -1,0 +1,8 @@
+{
+  "name": "mcp-ide-gateway",
+  "description": "Registers MCP-IDE-Gateway as an MCP server to enable Claude to interact with JetBrains IDEs",
+  "version": "1.0.0",
+  "author": {
+    "name": "orekyuu"
+  }
+}

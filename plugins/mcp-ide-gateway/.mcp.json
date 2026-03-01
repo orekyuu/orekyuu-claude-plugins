@@ -1,0 +1,6 @@
+{
+  "intellij-mcp": {
+    "type": "sse",
+    "url": "http://localhost:57293/mcp/sse"
+  }
+}

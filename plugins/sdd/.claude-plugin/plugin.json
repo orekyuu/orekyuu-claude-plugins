@@ -1,0 +1,8 @@
+{
+  "name": "sdd",
+  "description": "Implements features following Specification-Driven Development: spec → test → implementation, each in a dedicated agent",
+  "version": "1.0.0",
+  "author": {
+    "name": "orekyuu"
+  }
+}

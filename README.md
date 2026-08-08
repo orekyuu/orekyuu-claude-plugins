@@ -4,13 +4,14 @@ Claude Code 用のプラグインコレクションです。
 
 ## プラグイン一覧
 
-| プラグイン名    | カテゴリ    | 説明                                                                 |
-| --------------- | ----------- | -------------------------------------------------------------------- |
-| junit-report    | testing     | JUnit XML テストレポートを収集して表示する                           |
-| commit-command  | git         | 適切なコミットメッセージで git コミットを作成する                    |
-| sdd             | development | 仕様書策定→テスト設計→実装の順で機能を開発する                       |
-| mcp-ide-gateway | ide         | MCP-IDE-Gateway を MCP サーバーとして登録し JetBrains IDE と連携する |
-| gh-tools        | git         | CI 待機・CI 失敗調査・PR 情報取得など GitHub CLI を活用したスキル集  |
+| プラグイン名             | カテゴリ    | 説明                                                                 |
+| ------------------------ | ----------- | -------------------------------------------------------------------- |
+| junit-report             | testing     | JUnit XML テストレポートを収集して表示する                           |
+| commit-command           | git         | 適切なコミットメッセージで git コミットを作成する                    |
+| sdd                      | development | 仕様書策定→テスト設計→実装の順で機能を開発する                       |
+| mcp-ide-gateway          | ide         | MCP-IDE-Gateway を MCP サーバーとして登録し JetBrains IDE と連携する |
+| gh-tools                 | git         | CI 待機・CI 失敗調査・PR 情報取得など GitHub CLI を活用したスキル集  |
+| adversarial-verification | quality     | 独立した懐疑的レビュアーが成果物の反証を試みる                       |
 
 ## インストール方法
 

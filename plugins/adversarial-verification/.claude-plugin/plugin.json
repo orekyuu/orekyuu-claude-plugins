@@ -1,0 +1,8 @@
+{
+  "name": "adversarial-verification",
+  "description": "Adversarially verifies artifacts by having an independent skeptic attempt to disprove them",
+  "version": "1.0.0",
+  "author": {
+    "name": "orekyuu"
+  }
+}

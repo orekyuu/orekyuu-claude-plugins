@@ -33,6 +33,12 @@
       "description": "GitHub CLI tools for waiting for CI, investigating CI failures, and retrieving PR information",
       "source": "./plugins/gh-tools",
       "category": "git"
+    },
+    {
+      "name": "adversarial-verification",
+      "description": "Adversarially verifies artifacts by having an independent skeptic attempt to disprove them",
+      "source": "./plugins/adversarial-verification",
+      "category": "quality"
     }
   ]
 }

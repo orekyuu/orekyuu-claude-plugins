@@ -39,6 +39,12 @@
       "description": "Adversarially verifies artifacts by having an independent skeptic attempt to disprove them",
       "source": "./plugins/adversarial-verification",
       "category": "quality"
+    },
+    {
+      "name": "technical-writing",
+      "description": "Writes and edits technical documents, PR descriptions, and code explanations with a dedicated document editor agent",
+      "source": "./plugins/technical-writing",
+      "category": "documentation"
     }
   ]
 }
